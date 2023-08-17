@@ -14,7 +14,7 @@ if (process.argv.length < 3) {
 const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
-const git_repo = YOUR_GIT_URL;
+const git_repo = "https://github.com/AsifOni/ccg-boilerplate.git";
 
 try {
   fs.mkdirSync(projectPath);
@@ -30,23 +30,22 @@ try {
 }
 
 async function main() {
-    try {
-      console.log('Downloading files...');
-      execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
+  try {
+    console.log("Downloading files...");
+    execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
 
-      process.chdir(projectPath);
+    process.chdir(projectPath);
 
-      console.log('Installing dependencies...');
-      execSync('npm install');
+    console.log("Installing dependencies...");
+    execSync("npm install");
 
-      console.log('Removing useless files');
-      execSync('npx rimraf ./.git');
-      fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
+    console.log("Removing useless files");
+    execSync("npx rimraf ./.git");
+    fs.rmdirSync(path.join(projectPath, "bin"), { recursive: true });
 
-      console.log('The installation is done, this is ready to use !');
-
-    } catch (error) {
-      console.log(error);
-    }
+    console.log("The installation is done, this is ready to use !");
+  } catch (error) {
+    console.log(error);
+  }
 }
 main();
