@@ -23,9 +23,9 @@ const lobType = process.argv[3].toLowerCase();
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 const git_repo_id = {
-  rewards: "ccgx-rewards",
-  insurance: "ccgx-insurance",
-  caascont: "ccgx-caascont",
+  rewards: "my-stackbit-site",
+  insurance: "insurance-benefit",
+  caascont: "caascont-benefit",
 }[lobType];
 
 if (!git_repo_id) {
