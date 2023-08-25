@@ -10,7 +10,7 @@
   },
   "author": "",
   "bin": {
-    "create-ccg-rewards-app": "./create-ccg-app.js"
+    "create-ccg-app": "./create-ccg-app.js"
   },
   "license": "ISC",
   "devDependencies": {

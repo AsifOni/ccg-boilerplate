@@ -7,14 +7,14 @@ const fs = require("fs");
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
   console.log("For example :");
-  console.log("    npx create-ccg-rewards-app my-app");
+  console.log("    npx create-ccg-app my-app");
   process.exit(1);
 } else if (process.argv.length < 4) {
   console.log(
     "You have to provide a Line of business type to your app. Reserved names are Insurance, Rewards, CAASCOnt"
   );
   console.log("For example :");
-  console.log("    npx create-ccg-rewards-app my-app rewards Rewards");
+  console.log("    npx create-ccg-app my-app rewards Rewards");
   process.exit(1);
 }
 
@@ -34,7 +34,7 @@ if (!git_repo_id) {
     "You have to provide a Line of business type to your app. Reserved names are Insurance, Rewards, CAASCOnt"
   );
   console.log("For example :");
-  console.log("    npx create-ccg-rewards-app my-app rewards Rewards");
+  console.log("    npx create-ccg-app my-app rewards Rewards");
   process.exit(1);
 }
 const git_repo = `https://github.com/AsifOni/${git_repo_id}.git`;
