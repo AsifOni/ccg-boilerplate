@@ -14,7 +14,7 @@ if (process.argv.length < 3) {
     "You have to provide a Line of business type to your app. Reserved names are Insurance, Rewards, CAASCOnt"
   );
   console.log("For example :");
-  console.log("    npx create-ccg-app my-app rewards Rewards");
+  console.log("    npx create-ccg-app my-app Rewards");
   process.exit(1);
 }
 
