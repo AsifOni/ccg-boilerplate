@@ -31,12 +31,12 @@ try {
 
 async function main() {
   try {
-    console.log("Downloading files...");
+    console.log("Downloading Rewards files...");
     execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
 
     process.chdir(projectPath);
 
-    console.log("Installing dependencies...");
+    console.log("Installing project dependencies...");
     execSync("npm install");
 
     console.log("Removing useless files");
