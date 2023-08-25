@@ -55,7 +55,7 @@ try {
 async function main() {
   try {
     console.log(`Downloading ${lobType} files...`);
-    process.chdir(`${projectPath}/${git_repo_id}`);
+    // process.chdir(`${projectPath}/${git_repo_id}`);
 
     execSync(`cd ${projectPath}`);
     execSync(`git clone ${git_repo}`);
