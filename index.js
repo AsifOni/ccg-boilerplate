@@ -55,11 +55,10 @@ try {
 async function main() {
   try {
     console.log(`Downloading ${lobType} files...`);
-    // process.chdir(`${projectPath}/${git_repo_id}`);
+    process.chdir(`${projectPath}`);
 
-    execSync(`cd ${projectPath}`);
     execSync(`git clone ${git_repo}`);
-    execSync(`cd ${git_repo_id}`);
+    process.chdir(`${git_repo_id}`);
 
     console.log("Installing project dependencies...");
     execSync("npm install");
