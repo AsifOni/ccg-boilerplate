@@ -1,6 +1,6 @@
 {
   "name": "create-ccg-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "type": "commonjs",
@@ -9,9 +9,7 @@
     "build": "parcel build index.js"
   },
   "author": "",
-  "bin": {
-    "create-ccg-app": "./create-ccg-app.js"
-  },
+  "bin": "index.js",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
