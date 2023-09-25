@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "commonjs",
+  "publishConfig": {
+    "@caadigitalops:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.js"
