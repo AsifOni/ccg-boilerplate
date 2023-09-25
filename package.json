@@ -1,17 +1,21 @@
 {
-  "name": "create-ccg-app",
+  "name": "@asifoni/create-ccg-app",
   "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "type": "commonjs",
   "publishConfig": {
-    "@caadigitalops:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsifOni/ccg-boilerplate.git"
+  },
+  "author": "Astralform",
   "bin": "index.js",
   "license": "ISC",
   "devDependencies": {
